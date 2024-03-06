@@ -1,0 +1,32 @@
+------------------------------------------------
+  In acest proiect am facut compresia/decompresia fotografiilor de format PPM
+utilizand arbore cuaternar.
+  Pentru un arbore cuaternar, rădăcina reprezintă un pătrat, iar descendentii
+reprezinta cele patru patrate disjuncte si congruente, in care se poate imparti
+patratul initial. Un arbore cuaternar este inifinit, 
+insa noi vom uzita aceasta structura de date pentru reprezentarea unei imagini cu o 
+dimensiune redusa din plan. 
+Din acest motiv, vom folosi numai cateva niveluri din arborele cuaternar.
+-------------------------------------------------
+
+
+Pentru realizarea acestui proiect am creat 2 fisiere: main.c si header.h
+In header.h am pus structura necesara pentru citirea din fisier a culoril RGB,
+am facut structura nodului din arbore si structura nodului din coada.
+
+La primul task in primul rand am facut functia de citire din fisierul input,
+apoi am elaborat functiile de creare a arborelui, functia pentru determinarea
+daca nodul nou creat in arbore trebuie sa fie frunza si sa contina culori RGB
+sau sa fie doar un simplu nod intern. Functiile de determinare a inaltimii
+arborelui si blocului cel mai mare le-am facut aparte, determinarea
+nr de frunze am implementat in functia de adaugare a nodului
+in arbore (addNodeTree). Dupa ce codul  era verificat manual pentru taskul 1,
+am facut despartirea codului si utilizarea functiilor dupa necesitatea acestora
+in dependenta de optiunea aleasa de catre utilizator (-c1 -c2 -d);
+
+Pentru taskul 2 am implementat din start functiile si structura pentru coada,
+ele fiind necesare pentru parcurgerea cu nivel a arborelui, dupa care a fost
+implementata o functie pentru adaugarea informatiei necesare in fisierul
+de output in urma unor verificari de noduri ale arborelui, introducerea si
+scoaterea nodurilor din coada.
+
